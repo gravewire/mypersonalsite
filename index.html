@@ -1,171 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Web Developer Freelance — Siti web professionali e veloci per attività, professionisti e locali."
-    />
-    <title>Samuele Carenzi - Web Developer Freelance</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Aggiungere favicon quando la crei:
-    <link rel="icon" type="image/png" href="favicon.png" />
-    -->
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="logo">SamueleCarenzi &lt;/&gt;</div>
-        <nav class="nav">
-          <ul>
-            <li><a href="#services">Servizi</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contatti</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="#0a1014" name="theme-color"/>
+<meta content="noindex,nofollow" name="robots"/>
+<title>Samuele Carenzi | Field Notes [PROTOTIPO]</title>
+<meta content="Prototipo locale non pubblicabile: layout e testi segnaposto per samuelecarenzi.com." name="description"/>
+<link href="styles.css" rel="stylesheet"/><link href="fn-scroll.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script><script defer="True" src="fn-scroll.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
-    <section class="hero">
-      <div class="container">
-        <h1>Web Developer Freelance</h1>
+<!-- TOKYO URBAN DISPLAY | Multilingual Welcome -->
+<div class="welcome-ticker" aria-label="Benvenuti in diverse lingue">
+  <div class="welcome-ticker__track">
 
-        <p class="hero-claim">
-          Preventivo rapido • Consegna in 7 giorni (da materiali completi)
-        </p>
+    <div class="welcome-ticker__group">
+      <span lang="en">WELCOME</span>
+      <span lang="it">BENVENUTI</span>
+      <span lang="ja">ようこそ</span>
+      <span lang="fr">BIENVENUE</span>
+      <span lang="de">WILLKOMMEN</span>
+      <span lang="es">BIENVENIDOS</span>
+      <span lang="zh-Hans">欢迎</span>
+      <span lang="ko">환영합니다</span>
+    </div>
 
-        <img
-          src="./images/SamueleCarenzi.jpg"
-          alt="Foto di Samuele Carenzi, Web Developer Freelance."
-          class="portrait"
-        />
+    <!-- Copia per il loop continuo -->
+    <div class="welcome-ticker__group" aria-hidden="true">
+      <span lang="en">WELCOME</span>
+      <span lang="it">BENVENUTI</span>
+      <span lang="ja">ようこそ</span>
+      <span lang="fr">BIENVENUE</span>
+      <span lang="de">WILLKOMMEN</span>
+      <span lang="es">BIENVENIDOS</span>
+      <span lang="zh-Hans">欢迎</span>
+      <span lang="ko">환영합니다</span>
+    </div>
 
-        <p>
-          Siti web professionali, semplici e affidabili, pensati per aiutarti a
-          presentarti al meglio online e farti contattare facilmente.
-        </p>
+  </div>
+</div>
 
-        <a
-          href="mailto:samuelecarenzi.work@gmail.com?subject=Richiesta%20informazioni%20sito%20web"
-          class="btn-primary"
-        >
-          Richiedi informazioni
-        </a>
+<header class="site-header" id="top">
+<a aria-label="Samuele Carenzi, torna all'inizio" class="brand" href="#top"><span class="brand-mark">SC</span><span class="brand-wordmark"><strong>SAMUELE CARENZI</strong><small>FIELD NOTES // TECH // LIFE</small></span></a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="Apri menu" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Navigazione principale" class="site-nav" id="site-nav">
+<a href="#start">[01] Start</a>
+<a href="#collabora">[02] Web</a>
+<a href="#progetti">[03] Progetti</a>
+<a href="#field-notes">[04] Wunderkammer</a>
+<a href="#chi-sono">[05] Chi sono</a>
+<a href="#contatti">[06] Contatti</a>
+</nav>
+</header>
+<main id="contenuto">
+<!-- 01 | START -->
+<section aria-labelledby="hero-heading" class="hero section-boundary" id="start">
+<div class="hero-copy">
+<p class="section-kicker"><span class="marker">✣</span> [01] START HERE</p>
+<h1 id="hero-heading">
+  SAMUELE<br>CARENZI<span class="patlabor-dot" aria-hidden="true"></span>
+</h1>
+<div class="hero-subtitle"><span class="hero-subtitle-line hero-subtitle-accent">Web · Projects · Stories</span></div>
+<p class="placeholder-paragraph">Realizzo siti web.<br/>Studio infrastrutture IT e cybersecurity.</p>
 
-        <img
-          src="./images/codinglines.jpg"
-          alt="Linee di codice su uno schermo"
-          class="codinglines"
-        />
-      </div>
-    </section>
+</div>
 
-    <section id="services" class="services">
-      <div class="container">
-        <h2>I miei servizi</h2>
-        <p>
-          Aiuto aziende, professionisti, locali e creativi a costruire una
-          presenza online efficace. Ogni progetto è chiaro, moderno e orientato
-          ai risultati.
-        </p>
+</section><section aria-label="Animazione illustrativa del passaggio dagli appunti alla pagina web, controllata dallo scorrimento" class="fn-sequence" id="fn-sequence">
+<div aria-hidden="true" class="fn-stage" id="fn-stage">
+<div class="fn-grid" id="fn-grid"></div><div class="fn-glow"></div>
+<div class="fn-hud"><div><strong>BOOT SEQUENCE // <span id="fn-boot-state">INITIALIZING</span></strong><small>IDEA → DESIGN → BUILD → ONLINE</small></div><div class="fn-counter"><strong id="fn-stage-label">00 / STANDBY</strong></div></div>
+<div class="fn-stage-inner" id="fn-stage-inner">
+<div class="fn-frame" id="fn-frame">
+<div class="fn-browser-top"><i></i><i></i><i></i><span class="fn-url">samuelecarenzi.com / web</span><span class="fn-mode">PREVIEW</span></div>
+<div class="fn-browser-area">
+<div aria-hidden="true" class="fn-slot" data-slot="1"></div><div aria-hidden="true" class="fn-slot" data-slot="2"></div><div aria-hidden="true" class="fn-slot" data-slot="3"></div><div aria-hidden="true" class="fn-slot" data-slot="4"></div>
+<div class="fn-module" data-from="top" data-part="1"><span class="fn-eyebrow">01 / IDEA</span><div class="fn-fake-heading"></div><div class="fn-fake-heading short"></div><div class="fn-fake-line"></div><div class="fn-fake-line s"></div><div class="fn-fake-button"></div></div>
+<div class="fn-module" data-from="right" data-part="2"><span class="fn-eyebrow">02 / DESIGN</span><div class="fn-visual"></div></div>
+<div class="fn-module" data-from="bottom" data-part="3"><span class="fn-eyebrow">03 / BUILD</span><div class="fn-tiny-grid"><b></b><b></b><b></b></div></div>
+<div class="fn-module" data-from="left" data-part="4"><span class="fn-eyebrow">04 / ONLINE</span><div class="fn-fake-wave"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+</div>
+</div>
+</div>
+<div aria-label="Avanzamento dimostrativo dell'assemblaggio controllato dallo scorrimento" class="fn-load-panel">
+<div class="fn-load-meta"><span>UPLOAD // ASSEMBLY</span><strong id="fn-upload-pct">000%</strong></div>
+<div aria-label="Assemblaggio dell'interfaccia" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="fn-load-track" id="fn-upload-track" role="progressbar"><div class="fn-load-fill" id="fn-load-fill"></div></div>
+<div aria-live="off" class="fn-load-status" id="fn-load-status">AWAITING INPUT</div>
+</div>
+</div>
+</section>
+<!-- 02 | WEB -->
+<section aria-labelledby="collabora-title" class="collab-section section-boundary" id="collabora">
+<div class="collab-copy">
 
-        <div class="service-list">
-          <div class="service-item">
-            <h3>Sviluppo Web</h3>
-            <p>
-              Creo <strong>siti web personalizzati e su misura</strong>,
-              progettati per rappresentare al meglio la tua attività.
-            </p>
-            <p>
-              Supporto anche nella configurazione iniziale di e-commerce e
-              soluzioni semplici per partire senza complicazioni.
-            </p>
-          </div>
+  <p class="section-kicker">
+    <span class="marker">✣</span> [02] WEB
+  </p>
 
-          <div class="service-item">
-            <h3>Sicurezza Web di Base</h3>
-            <p>
-              Consulenza e buone pratiche per proteggere il tuo sito e i tuoi
-              contenuti online.
-            </p>
-            <ul>
-              <li>Protezione del sito</li>
-              <li>Backup regolari</li>
-              <li>Configurazioni sicure</li>
-            </ul>
-          </div>
+  <h2 id="collabora-title">
+    UN SITO CHE TI RAPPRESENTA.
+  </h2>
 
-          <div class="service-item">
-            <h3>Presenza Online per la tua attività</h3>
-            <p>
-              Aiuto ristoranti, bar, professionisti e creativi a presentarsi
-              online in modo chiaro, professionale e funzionale.
-            </p>
-            <ul>
-              <li>Siti vetrina 1–5 pagine</li>
-              <li>Landing page per promozioni</li>
-              <li>Ottimizzazione velocità</li>
-              <li>Manutenzione e sicurezza</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <p class="collab-description">
+    Realizzo siti web per professionisti, attività
+    e progetti online.
+  </p>
 
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-        <p>
-          Alcuni progetti selezionati per mostrare il mio approccio: semplicità,
-          chiarezza e attenzione ai dettagli.
-        </p>
+</div>
+<div class="collab-actions">
+<a class="button primary" href="#contatti">
 
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <a
-              href="https://cerulean-puppy-98fe57.netlify.app/"
-              target="_blank"
-            >
-              <img
-                src="./images/screenshot-bardemo.png"
-                alt="Sito web demo per attività locale"
-              />
-            </a>
-            <h4>Sito Web Demo per Attività Locale</h4>
-          </div>
-        </div>
-      </div>
-    </section>
+    PARLIAMONE <span aria-hidden="true">→</span>
+</a>
+</div>
+</section>
+<!-- 03 | PROJECTS -->
+<section aria-labelledby="projects-title" class="content-section section-boundary" id="progetti">
+<div class="section-heading">
+<div>
+<p class="section-kicker">
+<span class="marker">✣</span> [03] PROJECTS &amp; LABS</p>
+<h2 id="projects-title">
 
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contattami per il tuo progetto</h2>
+        PROGETTI E LABORATORI
 
-        <p>
-          Se vuoi discutere il tuo progetto o migliorare la tua presenza online,
-          scrivimi a
-          <a
-            href="mailto:samuelecarenzi.work@gmail.com?subject=Richiesta%20informazioni%20sito%20web"
-          >
-            <strong>samuelecarenzi.work@gmail.com</strong> </a
-          >. Ti risponderò entro 24 ore con una proposta chiara e
-          personalizzata.
-        </p>
+      </h2>
+</div>
+<span class="small-label">
 
-        <a
-          href="mailto:samuelecarenzi.work@gmail.com?subject=Richiesta%20informazioni%20sito%20web"
-          class="btn-primary"
-        >
-          Richiedi informazioni
-        </a>
-      </div>
-    </section>
+      [COMPILING PROJECTS...%]
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 - 2026 Samuele Carenzi. Tutti i diritti riservati.</p>
-      </div>
-    </footer>
-  </body>
+    </span>
+</div>
+<div class="projects-placeholder">
+
+
+<p class="projects-placeholder-status">
+
+      [近日公開 / COMING SOON]
+
+    </p>
+</div>
+</section>
+<!-- 04 | WUNDERKAMMER -->
+<section aria-labelledby="notes-title" class="content-section section-boundary" id="field-notes"><div class="section-heading"><div><p class="section-kicker"><span class="marker">✣</span> [04] FIELD NOTES</p>
+<h2 id="notes-title">WUNDERKAMMER.</h2>
+<div class="wunder-definition">
+<p class="wunder-dictionary">
+<strong>Wunderkammer</strong>
+<span>s. f. · dal tedesco, «camera delle meraviglie»</span>
+<span class="wunder-meaning">
+
+      Collezione di oggetti rari, curiosità e stranezze,
+
+      riuniti per suscitare meraviglia e desiderio di scoperta.
+
+    </span>
+</p>
+<!--<p class="wunder-personal">
+
+    Musica, fotografie, racconti, idee e altre cose
+
+    che non sapevo dove mettere.
+
+  </p>-->
+</div>
+
+<div class="projects-placeholder wunder-placeholder">
+<!--<h3>COMING SOON.</h3>
+<p>Musica, fotografie, racconti, idee e altre cose che non sapevo dove mettere. Sto preparando i primi contenuti.</p>
+-->
+<p class="projects-placeholder-status">[近日公開 / COMING SOON]</p>
+</div>
+</div></section>
+<!-- 05 | CHI SONO -->
+<section aria-labelledby="about-title" class="story-section section-boundary" id="chi-sono">
+<div class="story-body">
+<p class="section-kicker">
+<span class="marker">✣</span> [05] ABOUT</p>
+<h2 id="about-title">CHI SONO</h2>
+<p class="section-lead">
+
+      ...
+
+    </p>
+<p>
+
+      Per questa sezione era prevista una biografia emozionante, con sviluppo del personaggio, colpo di scena finale, esplosioni sul retro e camminata in slow motion.
+
+
+
+    </p>
+<p>
+
+
+Abbiamo speso tutto per il sito.
+
+    </p>
+
+<p class="about-editor-note">
+
+  <!--Editor notes-->
+
+</p>
+</div>
+<div class="story-image">
+
+  <img
+    class="story-photo"
+    src="images/Late-Night Programmer’s Cozy Desk.webp"
+    alt="Illustrazione anime di una postazione di lavoro notturna"
+  >
+
+
+</div>
+</section>
+<!-- 06 | CONTACT -->
+<section aria-labelledby="contact-title" class="contact-section section-boundary" id="contatti">
+<div class="contact-copy">
+<p class="section-kicker">
+<span class="marker">✣</span> [06] CONTACT</p>
+<h2 id="contact-title">
+
+      SWEET DREAMS.
+
+    </h2>
+<p class="section-lead">
+
+      KNOCK, KNOCK, User.
+
+    </p>
+<p class="contact-description">
+
+      Got a project, a question, an idea, or just want to say hello? <br> Drop me a message.
+
+    </p>
+</div>
+<div class="contact-links">
+<a class="button primary"
+   href="https://wa.me/393517590031"
+   target="_blank"
+   rel="noopener noreferrer">
+
+      GET IN TOUCH  <span aria-hidden="true">↗</span>
+</a>
+<a class="contact-link contact-email"
+   href="mailto:samuelecarenzi.work@gmail.com">
+  samuelecarenzi.work@gmail.com ↗
+</a>
+<a class="contact-link" href="https://www.linkedin.com/in/samuele-carenzi/" rel="noopener noreferrer" target="_blank">
+
+      LINKEDIN ↗
+
+    </a>
+</div>
+</section>
+<!-- GARAGE OPS | Sezioni sospese <div class="bottom-grid section-boundary"><section class="mini-section" id="esperienza" aria-labelledby="experience-title"><p class="section-kicker"><span class="marker">✣</span> [05] EXPERIENCE</p><h2 id="experience-title">ESPERIENZA</h2><p class="section-lead">[TITOLO PROVVISORIO]</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nulla vitae elit libero.</p><span class="small-label">Contenuti da revisionare</span></section><section class="mini-section" id="percorso" aria-labelledby="path-title"><p class="section-kicker"><span class="marker">✣</span> [06] CURRENT PATH</p><h2 id="path-title">PERCORSO ATTUALE</h2><p class="section-lead">[TITOLO PROVVISORIO]</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.</p><span class="small-label">Studio ≠ certificazioni conseguite</span></section></div>FINE SEZIONI SOSPESE -->
+<!-- OUTRO | COWBOY BEBOP HOMAGE -->
+<section aria-label="Saluto finale" class="space-cowboy-outro">
+<p class="space-cowboy-kicker">
+
+    END OF SESSION 001
+
+  </p>
+<p class="space-cowboy-line">
+
+    SEE YOU SPACE COWBOY...
+
+  </p>
+</section>
+</main>
+<footer class="site-footer"><span class="brand-footer">SC</span><span>SAMUELE CARENZI // WEB · PROJECTS · STORIES</span><a href="#top">TORNA SU ↑</a><small>© 2026 · MADE ON PLANET EARTH</small></footer>
+</body>
 </html>
